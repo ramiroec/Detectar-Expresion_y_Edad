@@ -329,7 +329,7 @@ const FaceDetector: React.FC = () => {
           textAlign: "left", 
           maxWidth: VIDEO_WIDTH, 
           margin: "20px auto",
-          backgroundColor: "#f8f9fa",
+          backgroundColor: "#0c2742ff",
           padding: "15px",
           borderRadius: "8px",
           boxShadow: "0 2px 5px rgba(0,0,0,0.1)"
