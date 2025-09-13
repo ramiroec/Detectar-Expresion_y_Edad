@@ -357,7 +357,7 @@ const FaceDetector: React.FC = () => {
                       key={expr} 
                       style={{ 
                         padding: "3px 8px", 
-                        backgroundColor: expr === face.emotion ? "#3498db" : "#2e0f84ff",
+                        backgroundColor: expr === face.emotion ? "#3498db" : "#e0e0e0",
                         color: expr === face.emotion ? "white" : "black",
                         borderRadius: "15px",
                         fontSize: "12px"
