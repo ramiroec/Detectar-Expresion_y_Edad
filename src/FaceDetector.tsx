@@ -22,7 +22,7 @@ const FaceDetector: React.FC = () => {
   const [facesData, setFacesData] = useState<FaceData[]>([]);
   const [displayMode, setDisplayMode] = useState<'landmarks' | 'expressions' | 'mesh'>('landmarks');
   const [showDetails, setShowDetails] = useState(true);
-  const detectionInterval = useRef<NodeJS.Timeout>();
+  const detectionInterval = useRef<number | undefined>(undefined);
 
   const videoConstraints = {
     width: VIDEO_WIDTH,

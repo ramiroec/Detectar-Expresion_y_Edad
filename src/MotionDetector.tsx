@@ -8,7 +8,7 @@ const VIDEO_HEIGHT = 360;
 const MotionDetector: React.FC = () => {
   const webcamRef = useRef<Webcam>(null);
   const canvasRef = useRef<HTMLCanvasElement>(null);
-  const detectionTimeout = useRef<NodeJS.Timeout>();
+  const detectionTimeout = useRef<number | undefined>(undefined);
 
   const [motionDetected, setMotionDetected] = useState(false);
   const [sensitivity, setSensitivity] = useState(30); // Sensibilidad entre 10 y 100
